@@ -6,7 +6,7 @@ start_time = time.time()
 response = ollama.chat(
     model="llama3.2:1b",
     messages=[
-        {"role": "user", "content": "short (2-3 sentences) bio on JFK"}
+        {"role": "user", "content": "5 questions for vex robotics judge to ask about engineering notebooks"}
     ],
     stream=True
 )

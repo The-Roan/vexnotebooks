@@ -8,7 +8,7 @@ url = "http://localhost:11434/api/generate"
 
 payload = {
     "model": "notebook-judge",
-    "prompt": "write 5 questions for a vex robotics judge to ask a student about their engineering journal",
+    "prompt": "write 5 questions for a vex robotics judge to ask a student about their engineering journal. print only the questions, in a numbered list.",
 }
 
 response = requests.post(url, json=payload, stream=False)
@@ -27,5 +27,5 @@ if response.status_code == 200:
 else:
     print("Error:", response.status_code, response.text)
 
-print("\n" + "Runtime:")
+print("\n" + "\n" + "Runtime:")
 print(datetime.now() - start)

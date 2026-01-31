@@ -14,7 +14,7 @@ payload = {
 response = requests.post(url, json=payload, stream=False)
 
 if response.status_code == 200:
-    print("Generated Text:", end=" ", flush=True)
+    print("Generated Text:" + "\n", end=" ", flush=True)
     # Iterate over the streaming response
     for line in response.iter_lines():
         if line:

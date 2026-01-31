@@ -1,5 +1,8 @@
 import requests
 import json
+from datetime import datetime
+
+start = datetime.now()
 
 url = "http://localhost:11434/api/generate"
 
@@ -23,3 +26,5 @@ if response.status_code == 200:
             print(generated_text, end="", flush=True)
 else:
     print("Error:", response.status_code, response.text)
+
+print(datetime.now()-setattr)

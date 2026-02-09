@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <img class="logo" src="../assets/favicon.png" alt="VEX Robotics Logo">
+        <img class="logo" src="../assets/favicon.png" alt="VEX Robotics Logo" draggable="false">
         <div class="topnav">
             <a class="active" href="basicvex.html">Home</a>
             <a class="inactive" href="upload.html">Upload</a>
@@ -15,10 +15,10 @@
         </div>
         <main>
         <!---<img class="main_img" src="vex_logo.png" alt="VEX Robotics Image">-->
-            <p class="title">Engineering Notebook AI</p>
-            <div class="buttons">
+            <p class="title">AI Engineering Notebook Scanner</p>
+            <div id="button_container">
                 <button class="buttons" onclick="UploadPage()">
-                    Upload Notebook
+                    Upload Notebooks
                 </button>
                 <button class="buttons" onclick="CatalogPage()">
                     View All Notebooks
@@ -27,10 +27,12 @@
         </main>
     <!--The js behind actual buttoms -->
     <script>
+        function HomePage() {
+            window.location.href = "basicvex.html"
+        }
         function UploadPage() {
             window.location.href = "upload.html"
         }
-
         function CatalogPage() {
             window.location.href = "catalog.html"
         }

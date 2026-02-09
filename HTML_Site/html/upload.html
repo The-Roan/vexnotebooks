@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <img class="logo" src="../assets/favicon.png" alt="VEX Robotics Logo">
+        <img class="logo" src="../assets/favicon.png" alt="VEX Robotics Logo" draggable="false">
         <div class="topnav">
             <a class="inactive" href="basicvex.html">Home</a>
             <a class="active" href="upload.html">Upload</a>
@@ -14,15 +14,14 @@
         </div>
         <main>
             <h2>Upload Engineering Notebook</h2>
+            <input type="file" id="pdfInput" accept="application/pdf" multiple>
             <div id="pdf-upload-section">
-                <input type="file" id="pdfInput" accept="application/pdf" multiple>
                 <div id="pdf-viewer-controls" style="display:none;">
                     <button id="prevPdfBtn">&larr;</button>
                     <span id="pdfCounter"></span>
                     <button id="nextPdfBtn">&rarr;</button>
                 </div>
                 <div id="pdfDisplay" style="margin-top:10px;">
-                    <!-- PDF preview will be shown here -->
                 </div>
             </div>
 

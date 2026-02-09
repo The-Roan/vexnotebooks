@@ -17,11 +17,15 @@ main {
     align-items: center;
 }
 
-.buttons {
+#button_container {
     display: flex;
     justify-content: center;
     gap: 30px;
     color: black;
+}
+
+.buttons:hover{
+    background-color: rgb(200, 200, 200);
 }
 
 button {
@@ -54,6 +58,20 @@ button {
 
 .topnav a.inactive {
     color: white;
+}
+
+.inactive:hover {
+    background-color: rgb(135, 12, 12);
+}
+
+#prevPdfBtn:hover, #nextPdfBtn:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#pdf-upload-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main_img {
